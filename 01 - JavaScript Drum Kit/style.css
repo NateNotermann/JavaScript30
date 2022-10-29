@@ -55,10 +55,16 @@ body,html {
   box-shadow: 0 0 1rem #ffc600;
 }
 
-.playing {
+.playing3 {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 kbd {

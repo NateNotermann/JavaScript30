@@ -36,11 +36,11 @@
         <span class="sound">Wont</span>
       </div>
       <div data-key="89" class="key">
-        <kbd>T</kbd>
+        <kbd>Y</kbd>
         <span class="sound">Regret</span>
       </div>
       <div data-key="85" class="key">
-        <kbd>Y</kbd>
+        <kbd>U</kbd>
         <span class="sound">It</span>
       </div>
     </div> <!-- ROW 1 END -->
@@ -91,12 +91,12 @@
       <!-- ROW 3 START-->
       <div data-key="90" class="key">
         <kbd>Z</kbd> <!-- <kbd> tag to signify a single keystroke-->
-        <span class="sound">Fart</span>
+        <span class="sound">Fart1</span>
       </div>
 
       <div data-key="88" class="key">
         <kbd>X</kbd>
-        <span class="sound">Air Horn</span>
+        <span class="sound">Fart2</span>
       </div>
 
       <div data-key="67" class="key">
@@ -108,7 +108,7 @@
         <kbd>V</kbd>
         <span class="sound">Mike</span>
       </div>
-   
+
       <div data-key="66" class="key">
         <kbd>B</kbd>
         <span class="sound">Who</span>
@@ -130,7 +130,7 @@
       </div>
 
       <div data-key="190" class="key">
-        <kbd>","</kbd>
+        <kbd>"."</kbd>
         <span class="sound">Kickball</span>
       </div>
 
@@ -170,11 +170,11 @@
   <audio data-key="190" src="sounds/kickball.wav"></audio> <!-- . -->
 
 
-  
+
   <script>
     //added an eventListener
     //eventListener runs function, takinzzzg in the event
-  
+
 
     function playSound(e) {
       // console.log('event', e, e.keyCode);
@@ -182,7 +182,7 @@
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
       // Find an element with a class of "key" (.key)
       const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-
+      
       if (!audio) return // stops function if no audio
       else {
         // console.log(audio); // console.logs if audio exists
@@ -193,7 +193,7 @@
         // key.classList.remove('playing'); // removes a class of "playing" (Vanilla Javascript)
         // key.classList.toggle('playing'); // toggles a class of "playing" (Vanilla Javascript)
         console.log(key); // CL actual key element
-
+         setBg();
       };
     };
 
@@ -209,6 +209,24 @@
     keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // runs function "removeTransition"
 
     window.addEventListener('keydown', playSound);
+
+
+    const setBg = () => {
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      console.log('randomColor:', randomColor);
+      document.body.style = "--main-color:" + "#" + randomColor;
+      // color.innerHTML = "#" + randomColor;
+
+      // HOW TO MASS VARIABLE FROM HTL TO .CSS FILE IN LINK BELOW //
+      // http://www.js-craft.io/blog/passing-a-css-variable-value-from-the-html-into-the-css/ 
+
+      // HOW TO GENERATE A RANDOM COLOR AND SAVE IT IN A VARIABLE IN LINK BELOW // 
+      // https://css-tricks.com/snippets/javascript/random-hex-color/
+
+    }
+
+    // genNew.addEventListener("click", setBg);
+   
   </script>
 
 
