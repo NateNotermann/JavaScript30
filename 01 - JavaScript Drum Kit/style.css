@@ -64,6 +64,7 @@ h1 {
   }
 }
 
+
 .playing {
   transform: scale(2.1);
   border-color: var(--main-color);
