@@ -7,52 +7,147 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+  <div class="mainDiv">
+    <!-- MAIN DIV START -->
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-    <div data-key="90" class="key">
-      <kbd>Z</kbd> <!-- <kbd> tag to signify a single keystroke-->
-      <span class="sound">Fart</span>
-    </div>
-  </div>
+    <div class="keys">
+      <!-- ROW 1 START-->
+      <div data-key="81" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">Please</span>
+      </div>
+      <div data-key="87" class="key">
+        <kbd>W</kbd>
+        <span class="sound">Hire</span>
+      </div>
+      <div data-key="69" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Me</span>
+      </div>
+      <div data-key="82" class="key">
+        <kbd>R</kbd>
+        <span class="sound">You</span>
+      </div>
+      <div data-key="84" class="key">
+        <kbd>T</kbd>
+        <span class="sound">Wont</span>
+      </div>
+      <div data-key="89" class="key">
+        <kbd>T</kbd>
+        <span class="sound">Regret</span>
+      </div>
+      <div data-key="85" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">It</span>
+      </div>
+    </div> <!-- ROW 1 END -->
 
+    <div class="keys">
+      <!-- ROW 2 START-->
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div> <!-- ROW 2 END -->
+
+
+
+    <div class="keys">
+      <!-- ROW 3 START-->
+      <div data-key="90" class="key">
+        <kbd>Z</kbd> <!-- <kbd> tag to signify a single keystroke-->
+        <span class="sound">Fart</span>
+      </div>
+
+      <div data-key="88" class="key">
+        <kbd>X</kbd>
+        <span class="sound">Air Horn</span>
+      </div>
+
+      <div data-key="67" class="key">
+        <kbd>C</kbd>
+        <span class="sound">Siren</span>
+      </div>
+
+      <div data-key="86" class="key">
+        <kbd>V</kbd>
+        <span class="sound">Mike</span>
+      </div>
+   
+      <div data-key="66" class="key">
+        <kbd>B</kbd>
+        <span class="sound">Who</span>
+      </div>
+
+      <div data-key="78" class="key">
+        <kbd>N</kbd>
+        <span class="sound">Cheese</span>
+      </div>
+      zz
+      <div data-key="77" class="key">
+        <kbd>M</kbd>
+        <span class="sound">Harry</span>
+      </div>
+
+      <div data-key="188" class="key">
+        <kbd>","</kbd>
+        <span class="sound">Dale</span>
+      </div>
+
+      <div data-key="190" class="key">
+        <kbd>","</kbd>
+        <span class="sound">Kickball</span>
+      </div>
+
+    </div><!-- ROW 3 END-->
+  </div> <!-- MAIN DIV END -->
+
+
+  <!-- ROW 1 -->
+  <audio data-key="81" src="sounds/please.wav"></audio>
+  <audio data-key="87" src="sounds/hire.wav"></audio>
+  <audio data-key="69" src="sounds/me.wav"></audio>
+  <audio data-key="82" src="sounds/you.wav"></audio>
+  <audio data-key="84" src="sounds/wont.wav"></audio>
+  <audio data-key="89" src="sounds/regret.wav"></audio>
+  <audio data-key="85" src="sounds/it.wav"></audio>
+
+  <!-- ROW 2 -->
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -63,13 +158,23 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-  <!-- Farts below. yep -->
-  <audio data-key="90" src="sounds/fart-03.wav"></audio> <!-- Z -->
+  <!-- ROW 3 -->
+  <audio data-key="90" src="sounds/fart1.wav"></audio> <!-- Z -->
+  <audio data-key="88" src="sounds/fart2.wav"></audio> <!-- X -->
+  <audio data-key="67" src="sounds/airhorn.wav"></audio> <!-- C -->
+  <audio data-key="86" src="sounds/Mike.wav"></audio> <!-- V -->
+  <audio data-key="66" src="sounds/who.wav"></audio> <!-- B -->
+  <audio data-key="78" src="sounds/cheese.wav"></audio> <!-- N -->
+  <audio data-key="77" src="sounds/harry.wav"></audio> <!-- M -->
+  <audio data-key="188" src="sounds/dale1.wav"></audio> <!-- , -->
+  <audio data-key="190" src="sounds/kickball.wav"></audio> <!-- . -->
 
+
+  
   <script>
     //added an eventListener
-    //eventListener runs function, taking in the event
-
+    //eventListener runs function, takinzzzg in the event
+  
 
     function playSound(e) {
       // console.log('event', e, e.keyCode);

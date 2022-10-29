@@ -13,10 +13,11 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 20vh;
   align-items: center;
   justify-content: center;
 }
+
 
 /* .key2 {
   border: .4rem solid black;
@@ -47,6 +48,7 @@ body,html {
 
 }
 
+
 .playing2 {
   transform: scale(1.1);
   border-color: #ffc600;
@@ -69,4 +71,11 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.mainDiv {
+  -webkit-flex-direction: row; 
+  flex-direction: row;
+  
+
 }
